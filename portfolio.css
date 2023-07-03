@@ -1,0 +1,41 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greet{
+    position: relative;
+    top: 150px;
+    left: 30%;
+    font-size: 35px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 5px 3px 5px black;
+    font-family: 'Great Vibes', cursive;
+}
+
+.name{
+    position: relative;
+    top: 150px;
+    left: 35%;
+    color: white;
+    text-shadow: 7px 7px 10px rgb(0, 0, 0);
+    font-size: 60px;
+    font-family: 'Caprasimo', cursive;
+    letter-spacing: 5px;
+}
+
+.plane{
+    position: relative;
+    left:70%;
+    bottom: 130px;
+    /* mix-blend-mode: multiply; */
+    width: 100px;
+    transform: rotateY(180deg) rotate(-15deg);
+}
+
+.nb-cont{
+    backdrop-filter: blur(17px);
+}

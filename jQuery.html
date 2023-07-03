@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>JQuery</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: antiquewhite;
+        }
+
+        button{
+            padding: 20px;
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(177, 218, 255);
+        }
+    </style>
+</head>
+<body>
+    <p class="weak">Strong button erase everything.</p>
+    <p class="weak">Please Don't Click.</p>
+    <button id="bt1">Strong Button</button>
+    <p id="strong">i am Strong. </p>
+    <button id="bt2">Erase Strong text</button>
+    <button class="weak-revive">Revive Weak texts</button>
+    <button class="get-back">Get everything back</button>
+    <script>
+        $(document).ready(function(){
+            $("#bt1").click(function() {
+                $("p").hide();
+            })
+        });
+        $(document).ready(function() {
+            $("#bt2").click(function(){
+                $("#strong").hide();
+            })
+        })
+        $(document).ready(function(){
+            $(".weak-revive").click(() => {
+                $(".weak").show();
+            })
+        })
+        $(document).ready(function(){
+            $(".get-back").click(() => {
+                $("p").show();
+            })
+        })
+    </script>
+</body>
+</html>
